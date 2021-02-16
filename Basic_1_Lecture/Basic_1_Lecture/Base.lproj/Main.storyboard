@@ -17,17 +17,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="30b-qN-etj">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="20" y="64" width="111.5" height="778"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dfo-vZ-f8q">
+                                <rect key="frame" x="282.5" y="64" width="111.5" height="778"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mmi-CS-w0G">
+                                <rect key="frame" x="151.5" y="64" width="111" height="778"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="30b-qN-etj" secondAttribute="bottom" id="AQG-dc-eWR"/>
-                            <constraint firstItem="30b-qN-etj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Lj8-cr-Ydd"/>
-                            <constraint firstItem="30b-qN-etj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ntU-f8-e6v"/>
-                            <constraint firstAttribute="trailing" secondItem="30b-qN-etj" secondAttribute="trailing" id="qH9-Kn-C3x"/>
+                            <constraint firstItem="Mmi-CS-w0G" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="3ev-FP-frK"/>
+                            <constraint firstItem="Dfo-vZ-f8q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="6Ad-QF-kR3"/>
+                            <constraint firstItem="30b-qN-etj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7dQ-w0-CMm"/>
+                            <constraint firstItem="Dfo-vZ-f8q" firstAttribute="leading" secondItem="Mmi-CS-w0G" secondAttribute="trailing" constant="20" id="IrF-N2-PpU"/>
+                            <constraint firstItem="Mmi-CS-w0G" firstAttribute="width" secondItem="30b-qN-etj" secondAttribute="width" id="OMK-so-SIH"/>
+                            <constraint firstItem="30b-qN-etj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="WLJ-sJ-0V2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Dfo-vZ-f8q" secondAttribute="bottom" constant="20" id="bHA-vn-lvy"/>
+                            <constraint firstItem="Mmi-CS-w0G" firstAttribute="leading" secondItem="30b-qN-etj" secondAttribute="trailing" constant="20" id="e1E-hN-L24"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dfo-vZ-f8q" secondAttribute="trailing" constant="20" id="op8-8t-Kmw"/>
+                            <constraint firstItem="Dfo-vZ-f8q" firstAttribute="width" secondItem="30b-qN-etj" secondAttribute="width" id="qrk-m6-QZv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Mmi-CS-w0G" secondAttribute="bottom" constant="20" id="rac-ur-U8U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="30b-qN-etj" secondAttribute="bottom" constant="20" id="tMt-RR-K1W"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -39,6 +55,12 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
