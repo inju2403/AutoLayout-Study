@@ -16,18 +16,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VXs-w7-VBT">
-                                <rect key="frame" x="20" y="64" width="374" height="778"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="30b-qN-etj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="VXs-w7-VBT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Jef-od-LOo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VXs-w7-VBT" secondAttribute="bottom" constant="20" id="heI-wA-OzL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VXs-w7-VBT" secondAttribute="trailing" constant="20" id="mOG-h6-eM7"/>
-                            <constraint firstItem="VXs-w7-VBT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rMW-2v-ACA"/>
+                            <constraint firstAttribute="bottom" secondItem="30b-qN-etj" secondAttribute="bottom" id="AQG-dc-eWR"/>
+                            <constraint firstItem="30b-qN-etj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Lj8-cr-Ydd"/>
+                            <constraint firstItem="30b-qN-etj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ntU-f8-e6v"/>
+                            <constraint firstAttribute="trailing" secondItem="30b-qN-etj" secondAttribute="trailing" id="qH9-Kn-C3x"/>
                         </constraints>
                     </view>
                 </viewController>
