@@ -16,13 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WeatherBG_Sun.png" translatesAutoresizingMaskIntoConstraints="NO" id="MzG-mA-v42">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40º" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BL4-pD-j39">
-                                <rect key="frame" x="172" y="287" width="70" height="53"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Meo-mu-YhL">
+                                <rect key="frame" x="40" y="84" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQp-b2-62I">
+                                <rect key="frame" x="332" y="84" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQp-IG-fty">
+                                <rect key="frame" x="122" y="84" width="170" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -30,8 +38,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="BL4-pD-j39" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YIL-JV-C1R"/>
-                            <constraint firstItem="BL4-pD-j39" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.7" id="tfF-eR-qzw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GQp-b2-62I" secondAttribute="trailing" constant="40" id="2eI-2Y-hXM"/>
+                            <constraint firstItem="Meo-mu-YhL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Bb6-JX-4tz"/>
+                            <constraint firstItem="Meo-mu-YhL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="DZa-JL-Zc5"/>
+                            <constraint firstItem="GQp-b2-62I" firstAttribute="leading" secondItem="sQp-IG-fty" secondAttribute="trailing" constant="40" id="bRh-1m-7MZ"/>
+                            <constraint firstItem="sQp-IG-fty" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="cVy-kv-vhs"/>
+                            <constraint firstItem="GQp-b2-62I" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="g7y-hh-KW2"/>
+                            <constraint firstItem="sQp-IG-fty" firstAttribute="leading" secondItem="Meo-mu-YhL" secondAttribute="trailing" constant="40" id="jpt-ct-PSM"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -41,7 +54,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="WeatherBG_Sun.png" width="180" height="320.16000366210938"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
