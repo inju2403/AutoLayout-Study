@@ -15,6 +15,7 @@
 		6E83751C25DAB52400E1ABA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E83751A25DAB52400E1ABA0 /* LaunchScreen.storyboard */; };
 		6E979AAD25E15DF30027E7D8 /* weather_icon_sun_cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E979AAB25E15DF30027E7D8 /* weather_icon_sun_cloud.png */; };
 		6E979AAE25E15DF30027E7D8 /* WeatherBG_Sun.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E979AAC25E15DF30027E7D8 /* WeatherBG_Sun.png */; };
+		6E979AB125E3EC3E0027E7D8 /* WeatherBG_Moon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E979AB025E3EC3E0027E7D8 /* WeatherBG_Moon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		6E83751D25DAB52400E1ABA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E979AAB25E15DF30027E7D8 /* weather_icon_sun_cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weather_icon_sun_cloud.png; sourceTree = "<group>"; };
 		6E979AAC25E15DF30027E7D8 /* WeatherBG_Sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WeatherBG_Sun.png; sourceTree = "<group>"; };
+		6E979AB025E3EC3E0027E7D8 /* WeatherBG_Moon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WeatherBG_Moon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				6E83751A25DAB52400E1ABA0 /* LaunchScreen.storyboard */,
 				6E979AAB25E15DF30027E7D8 /* weather_icon_sun_cloud.png */,
 				6E979AAC25E15DF30027E7D8 /* WeatherBG_Sun.png */,
+				6E979AB025E3EC3E0027E7D8 /* WeatherBG_Moon.png */,
 				6E83751D25DAB52400E1ABA0 /* Info.plist */,
 			);
 			path = Basic_1_Lecture;
@@ -130,6 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E979AB125E3EC3E0027E7D8 /* WeatherBG_Moon.png in Resources */,
 				6E979AAD25E15DF30027E7D8 /* weather_icon_sun_cloud.png in Resources */,
 				6E83751C25DAB52400E1ABA0 /* LaunchScreen.storyboard in Resources */,
 				6E83751925DAB52400E1ABA0 /* Assets.xcassets in Resources */,
