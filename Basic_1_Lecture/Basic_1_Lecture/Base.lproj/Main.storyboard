@@ -15,23 +15,8 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYO-ai-oyb">
-                                <rect key="frame" x="115.66666666666669" y="371" width="144" height="70"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="30" maxY="10"/>
-                                <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="-20" maxY="0.0"/>
-                                <state key="normal" title="Button" image="home50x50.png">
-                                    <color key="titleColor" red="0.16945120690000001" green="0.52804422380000005" blue="0.98828905820000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="UYO-ai-oyb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ku0-gF-a1q"/>
-                            <constraint firstItem="UYO-ai-oyb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LFh-5e-XCo"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -40,12 +25,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="home50x50.png" width="50" height="50"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
