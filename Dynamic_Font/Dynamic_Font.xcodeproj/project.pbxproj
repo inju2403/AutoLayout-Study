@@ -13,6 +13,8 @@
 		6E815A9225EBDD4100FCBD75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E815A9025EBDD4100FCBD75 /* Main.storyboard */; };
 		6E815A9425EBDD4200FCBD75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E815A9325EBDD4200FCBD75 /* Assets.xcassets */; };
 		6E815A9725EBDD4200FCBD75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E815A9525EBDD4200FCBD75 /* LaunchScreen.storyboard */; };
+		6E815AA125EBDE1200FCBD75 /* Cert_BG.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 6E815A9F25EBDE1200FCBD75 /* Cert_BG.PNG */; };
+		6E815AA225EBDE1200FCBD75 /* Cert_Sample.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 6E815AA025EBDE1200FCBD75 /* Cert_Sample.PNG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		6E815A9325EBDD4200FCBD75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E815A9625EBDD4200FCBD75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E815A9825EBDD4200FCBD75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E815A9F25EBDE1200FCBD75 /* Cert_BG.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cert_BG.PNG; sourceTree = "<group>"; };
+		6E815AA025EBDE1200FCBD75 /* Cert_Sample.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cert_Sample.PNG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				6E815A9325EBDD4200FCBD75 /* Assets.xcassets */,
 				6E815A9525EBDD4200FCBD75 /* LaunchScreen.storyboard */,
 				6E815A9825EBDD4200FCBD75 /* Info.plist */,
+				6E815A9F25EBDE1200FCBD75 /* Cert_BG.PNG */,
+				6E815AA025EBDE1200FCBD75 /* Cert_Sample.PNG */,
 			);
 			path = Dynamic_Font;
 			sourceTree = "<group>";
@@ -124,6 +130,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E815AA225EBDE1200FCBD75 /* Cert_Sample.PNG in Resources */,
+				6E815AA125EBDE1200FCBD75 /* Cert_BG.PNG in Resources */,
 				6E815A9725EBDD4200FCBD75 /* LaunchScreen.storyboard in Resources */,
 				6E815A9425EBDD4200FCBD75 /* Assets.xcassets in Resources */,
 				6E815A9225EBDD4100FCBD75 /* Main.storyboard in Resources */,
