@@ -22,8 +22,8 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cert_BG.PNG" translatesAutoresizingMaskIntoConstraints="NO" id="xTw-Tf-v2Z">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="498.66666666666669"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공인인증서" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="kAe-tz-8NJ">
-                                        <rect key="frame" x="118.66666666666666" y="0.0" width="112.66666666666666" height="174.66666666666666"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공인인증서" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="kAe-tz-8NJ">
+                                        <rect key="frame" x="113.66666666666666" y="0.0" width="122.66666666666666" height="174.66666666666666"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -35,6 +35,7 @@
                                     <constraint firstAttribute="bottom" secondItem="xTw-Tf-v2Z" secondAttribute="bottom" id="Ghz-c3-alT"/>
                                     <constraint firstItem="kAe-tz-8NJ" firstAttribute="top" secondItem="xTw-Tf-v2Z" secondAttribute="top" id="JG3-du-Q8H"/>
                                     <constraint firstAttribute="width" secondItem="wsC-Tf-ilj" secondAttribute="height" multiplier="1009:1438" id="R7N-KY-q89"/>
+                                    <constraint firstItem="kAe-tz-8NJ" firstAttribute="width" secondItem="xTw-Tf-v2Z" secondAttribute="width" multiplier="0.35" id="Wde-fa-YSb"/>
                                     <constraint firstItem="kAe-tz-8NJ" firstAttribute="bottom" secondItem="xTw-Tf-v2Z" secondAttribute="bottom" multiplier="0.35" id="XkL-y4-YeV"/>
                                     <constraint firstAttribute="trailing" secondItem="xTw-Tf-v2Z" secondAttribute="trailing" id="ZXt-Og-6D5"/>
                                     <constraint firstItem="xTw-Tf-v2Z" firstAttribute="top" secondItem="wsC-Tf-ilj" secondAttribute="top" id="tAh-OS-tEh"/>
