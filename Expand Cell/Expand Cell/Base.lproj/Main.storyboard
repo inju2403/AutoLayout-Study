@@ -61,7 +61,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.74535434700000003" green="0.68282948619999995" blue="1" alpha="0.72212535170000003" colorSpace="custom" customColorSpace="displayP3"/>
                                         <connections>
-                                            <outlet property="descriptionLabel" destination="MFN-bu-Rlx" id="x55-kQ-aEH"/>
+                                            <outlet property="descriptionLabel" destination="SGL-e1-8tp" id="bYY-K4-9Yz"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
