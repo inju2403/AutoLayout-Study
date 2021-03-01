@@ -13,6 +13,8 @@
 		6E815AB825EC7EA400FCBD75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E815AB625EC7EA400FCBD75 /* Main.storyboard */; };
 		6E815ABA25EC7EA500FCBD75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E815AB925EC7EA500FCBD75 /* Assets.xcassets */; };
 		6E815ABD25EC7EA500FCBD75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E815ABB25EC7EA500FCBD75 /* LaunchScreen.storyboard */; };
+		6E815AC625EC841200FCBD75 /* CustomKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E815AC525EC841200FCBD75 /* CustomKeyboard.swift */; };
+		6E815AC925EC843300FCBD75 /* CustomKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E815AC825EC843300FCBD75 /* CustomKeyboard.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		6E815AB925EC7EA500FCBD75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E815ABC25EC7EA500FCBD75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E815ABE25EC7EA500FCBD75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E815AC525EC841200FCBD75 /* CustomKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomKeyboard.swift; sourceTree = "<group>"; };
+		6E815AC825EC843300FCBD75 /* CustomKeyboard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomKeyboard.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				6E815AB225EC7EA400FCBD75 /* SceneDelegate.swift */,
 				6E815AB425EC7EA400FCBD75 /* ViewController.swift */,
 				6E815AB625EC7EA400FCBD75 /* Main.storyboard */,
+				6E815AC525EC841200FCBD75 /* CustomKeyboard.swift */,
+				6E815AC825EC843300FCBD75 /* CustomKeyboard.xib */,
 				6E815AB925EC7EA500FCBD75 /* Assets.xcassets */,
 				6E815ABB25EC7EA500FCBD75 /* LaunchScreen.storyboard */,
 				6E815ABE25EC7EA500FCBD75 /* Info.plist */,
@@ -127,6 +133,7 @@
 				6E815ABD25EC7EA500FCBD75 /* LaunchScreen.storyboard in Resources */,
 				6E815ABA25EC7EA500FCBD75 /* Assets.xcassets in Resources */,
 				6E815AB825EC7EA400FCBD75 /* Main.storyboard in Resources */,
+				6E815AC925EC843300FCBD75 /* CustomKeyboard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +147,7 @@
 				6E815AB525EC7EA400FCBD75 /* ViewController.swift in Sources */,
 				6E815AB125EC7EA400FCBD75 /* AppDelegate.swift in Sources */,
 				6E815AB325EC7EA400FCBD75 /* SceneDelegate.swift in Sources */,
+				6E815AC625EC841200FCBD75 /* CustomKeyboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
