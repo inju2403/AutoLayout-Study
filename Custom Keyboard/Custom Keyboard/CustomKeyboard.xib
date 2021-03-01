@@ -28,11 +28,8 @@
                                         <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="quI-sP-dvW"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOx-M3-lmb">
-                                    <rect key="frame" x="104" y="0.0" width="102" height="83"/>
-                                </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9p-5A-m3d">
-                                    <rect key="frame" x="208" y="0.0" width="102" height="83"/>
+                                    <rect key="frame" x="104" y="0.0" width="102" height="83"/>
                                     <color key="backgroundColor" red="1" green="0.58431372549019611" blue="0.0" alpha="0.53561266928517348" colorSpace="custom" customColorSpace="sRGB"/>
                                     <state key="normal" title="8"/>
                                     <connections>
@@ -40,11 +37,19 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9tK-Hk-RYY">
-                                    <rect key="frame" x="312" y="0.0" width="102" height="83"/>
+                                    <rect key="frame" x="208" y="0.0" width="102" height="83"/>
                                     <color key="backgroundColor" red="1" green="0.58431372549019611" blue="0.0" alpha="0.53561266928517348" colorSpace="custom" customColorSpace="sRGB"/>
                                     <state key="normal" title="9"/>
                                     <connections>
                                         <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="ObJ-2U-vke"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Osw-u9-XgR">
+                                    <rect key="frame" x="312" y="0.0" width="102" height="83"/>
+                                    <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.0" alpha="0.53561266929999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="delete"/>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="kLL-vY-PLP"/>
                                     </connections>
                                 </button>
                             </subviews>

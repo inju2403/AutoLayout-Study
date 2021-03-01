@@ -77,6 +77,15 @@ extension ViewController: CustomKeyboardDelegate {
             else if str == "000" {
                 newNum = curNum * 1000
             }
+            else if str == "delete" {
+                print(curNum)
+                if curNum > 0 {
+                    newNum = curNum / 10
+                }
+                else {
+                    newNum = 0
+                }
+            }
             else {
                 if let new = newNum {
                     newNum = curNum*10 + new
