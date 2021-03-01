@@ -19,7 +19,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Do any additional setup after loading the view.
     }
 
-    //cell을 구성하는 부분에 대한 내용
+    // row 개수
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    // cell을 구성하는 부분에 대한 내용
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "expandCell_ID", for: indexPath) as! ExpandCell
         
