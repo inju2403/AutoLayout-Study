@@ -44,6 +44,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ptQ-hh-H0a" secondAttribute="trailing" constant="20" id="zN8-M6-qzL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="firstTextfield" destination="ptQ-hh-H0a" id="z7A-lK-b8A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
