@@ -9,7 +9,27 @@ import UIKit
 
 class ViewController: UIViewController, CustomKeyboardDelegate {
     func keyboardTapped(str: String) {
+        
         print(str)
+        
+        let oldNum = Int(firstTextfield.text!)
+        var newNum = Int(str)
+        
+        if str == "00" && oldNum != nil {
+            newNum = oldNum! * 100
+        }
+        if str == "000" && oldNum != nil {
+            newNum = oldNum! * 1000
+        }
+        
+        if let hasNum = newNum {
+            let numberFormatter = NumberFormatter()
+            numberFormatter.numberStyle = .decimal // 숫자를 세지라수마다 쉼표로 표시
+            
+            if let formatted = numberFormatter.string(from: NSNumber(value: hasNum)) {
+                firstTextfield.text = String(describing: formatted)
+            }
+        }
     }
     
 
