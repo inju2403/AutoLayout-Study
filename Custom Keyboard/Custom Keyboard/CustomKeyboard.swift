@@ -7,14 +7,15 @@
 
 import UIKit
 
+protocol CustomKeyboardDelegate {
+    func keyboardTapped(str: String)
+}
+
 class CustomKeyboard: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    var delegate: CustomKeyboardDelegate?
+    
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        delegate?.keyboardTapped(str: sender.titleLabel!.text!)
     }
-    */
-
 }

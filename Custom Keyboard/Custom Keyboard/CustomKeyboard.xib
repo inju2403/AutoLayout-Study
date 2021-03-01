@@ -24,6 +24,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="102" height="83"/>
                                     <color key="backgroundColor" red="1" green="0.58431372549019611" blue="0.0" alpha="0.53561266928517348" colorSpace="custom" customColorSpace="sRGB"/>
                                     <state key="normal" title="7"/>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="quI-sP-dvW"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOx-M3-lmb">
                                     <rect key="frame" x="104" y="0.0" width="102" height="83"/>
@@ -32,11 +35,17 @@
                                     <rect key="frame" x="208" y="0.0" width="102" height="83"/>
                                     <color key="backgroundColor" red="1" green="0.58431372549019611" blue="0.0" alpha="0.53561266928517348" colorSpace="custom" customColorSpace="sRGB"/>
                                     <state key="normal" title="8"/>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="lcR-Bh-1CI"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9tK-Hk-RYY">
                                     <rect key="frame" x="312" y="0.0" width="102" height="83"/>
                                     <color key="backgroundColor" red="1" green="0.58431372549019611" blue="0.0" alpha="0.53561266928517348" colorSpace="custom" customColorSpace="sRGB"/>
                                     <state key="normal" title="9"/>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="ObJ-2U-vke"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </stackView>
@@ -47,11 +56,17 @@
                                     <rect key="frame" x="0.0" y="0.0" width="102" height="83"/>
                                     <color key="backgroundColor" red="1" green="0.58431372549019611" blue="0.0" alpha="0.53561266928517348" colorSpace="custom" customColorSpace="sRGB"/>
                                     <state key="normal" title="4"/>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="3P5-He-VaD"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IN1-WC-Opw">
                                     <rect key="frame" x="104" y="0.0" width="102" height="83"/>
                                     <color key="backgroundColor" red="1" green="0.58431372549019611" blue="0.0" alpha="0.53561266928517348" colorSpace="custom" customColorSpace="sRGB"/>
                                     <state key="normal" title="5"/>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="Fpd-aK-blv"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3AD-0u-MhL">
                                     <rect key="frame" x="208" y="0.0" width="102" height="83"/>
@@ -60,6 +75,9 @@
                                     <rect key="frame" x="312" y="0.0" width="102" height="83"/>
                                     <color key="backgroundColor" red="1" green="0.58431372549019611" blue="0.0" alpha="0.53561266928517348" colorSpace="custom" customColorSpace="sRGB"/>
                                     <state key="normal" title="6"/>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="0in-k9-ocV"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </stackView>
@@ -70,16 +88,25 @@
                                     <rect key="frame" x="0.0" y="0.0" width="102" height="83"/>
                                     <color key="backgroundColor" red="1" green="0.58431372549019611" blue="0.0" alpha="0.53561266928517348" colorSpace="custom" customColorSpace="sRGB"/>
                                     <state key="normal" title="1"/>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="0N1-qW-My8"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xcn-tf-SlP">
                                     <rect key="frame" x="104" y="0.0" width="102" height="83"/>
                                     <color key="backgroundColor" red="1" green="0.58431372549019611" blue="0.0" alpha="0.53561266928517348" colorSpace="custom" customColorSpace="sRGB"/>
                                     <state key="normal" title="2"/>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="6yc-sI-cfK"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O64-Mh-wET">
                                     <rect key="frame" x="208" y="0.0" width="102" height="83"/>
                                     <color key="backgroundColor" red="1" green="0.58431372549019611" blue="0.0" alpha="0.53561266928517348" colorSpace="custom" customColorSpace="sRGB"/>
                                     <state key="normal" title="3"/>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="8ht-g4-m4x"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3G-hD-8Th">
                                     <rect key="frame" x="312" y="0.0" width="102" height="83"/>
@@ -93,16 +120,25 @@
                                     <rect key="frame" x="0.0" y="0.0" width="136.5" height="83"/>
                                     <color key="backgroundColor" red="1" green="0.58431372549019611" blue="0.0" alpha="0.53561266928517348" colorSpace="custom" customColorSpace="sRGB"/>
                                     <state key="normal" title="00"/>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="8qe-b4-kXb"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Iy-vc-f0A">
                                     <rect key="frame" x="138.5" y="0.0" width="137" height="83"/>
                                     <color key="backgroundColor" red="1" green="0.58431372549019611" blue="0.0" alpha="0.53561266928517348" colorSpace="custom" customColorSpace="sRGB"/>
                                     <state key="normal" title="0"/>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="utZ-Et-KWZ"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ia-0d-g6k">
                                     <rect key="frame" x="277.5" y="0.0" width="136.5" height="83"/>
                                     <color key="backgroundColor" red="1" green="0.58431372549019611" blue="0.0" alpha="0.53561266928517348" colorSpace="custom" customColorSpace="sRGB"/>
                                     <state key="normal" title="000"/>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="PrV-66-VW7"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </stackView>

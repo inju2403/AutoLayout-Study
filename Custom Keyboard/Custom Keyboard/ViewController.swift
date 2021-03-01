@@ -7,7 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CustomKeyboardDelegate {
+    func keyboardTapped(str: String) {
+        print(str)
+    }
+    
 
     @IBOutlet weak var firstTextfield: UITextField!
     
@@ -22,9 +26,10 @@ class ViewController: UIViewController {
         let myKeyboard = loadNib?.first as! CustomKeyboard
 //        let myKeyboard = loadNib?[0] as! CustomKeyboard   // 위의 코드와 같음
         
+        myKeyboard.delegate = self
+        
         firstTextfield.inputView = myKeyboard
     }
 
 
 }
-
