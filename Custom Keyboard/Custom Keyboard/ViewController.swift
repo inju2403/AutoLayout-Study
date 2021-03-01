@@ -24,6 +24,11 @@ class ViewController: UIViewController, CustomKeyboardDelegate {
             else if str == "000" {
                 newNum = curNum * 1000
             }
+            else {
+                if let new = newNum {
+                    newNum = curNum*10 + new
+                }
+            }
         }
         
         if let new = newNum {
