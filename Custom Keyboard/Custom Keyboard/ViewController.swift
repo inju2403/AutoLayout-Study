@@ -8,27 +8,28 @@
 import UIKit
 
 class ViewController: UIViewController, CustomKeyboardDelegate {
+    
     func keyboardTapped(str: String) {
-        
-        print(str)
-        
-        let oldNum = Int(firstTextfield.text!)
+        var oldNum: Int?
         var newNum = Int(str)
         
-        if str == "00" && oldNum != nil {
-            newNum = oldNum! * 100
-        }
-        if str == "000" && oldNum != nil {
-            newNum = oldNum! * 1000
+        if let old = firstTextfield.text {
+            oldNum = Int(old.replacingOccurrences(of: ",", with: ""))
         }
         
-        if let hasNum = newNum {
-            let numberFormatter = NumberFormatter()
-            numberFormatter.numberStyle = .decimal // 숫자를 세지라수마다 쉼표로 표시
-            
-            if let formatted = numberFormatter.string(from: NSNumber(value: hasNum)) {
-                firstTextfield.text = String(describing: formatted)
+        if let curNum = oldNum {
+            if str == "00" {
+                newNum = curNum * 100
             }
+            else if str == "000" {
+                newNum = curNum * 1000
+            }
+        }
+        
+        if let new = newNum {
+            let formatter = NumberFormatter()
+            formatter.numberStyle = .decimal
+            firstTextfield.text = formatter.string(from: NSNumber(value: new))
         }
     }
     
