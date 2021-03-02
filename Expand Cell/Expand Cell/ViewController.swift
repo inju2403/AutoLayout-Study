@@ -46,9 +46,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         cell.descriptionLabel.text = dataModels[indexPath.row].description
         
-        cell.descriptionLabel.numberOfLines = dataModels[indexPath.row].isExpand == false ? 0 : 1
+        cell.descriptionLabel.numberOfLines = dataModels[indexPath.row].isExpand ? 0 : 1
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        dataModels[indexPath.row].isExpand = !dataModels[indexPath.row].isExpand
+        tableView.reloadRows(at: [indexPath], with: .none)
     }
     
 }
