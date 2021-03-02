@@ -48,6 +48,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         cell.descriptionLabel.numberOfLines = dataModels[indexPath.row].isExpand ? 0 : 1
         
+        cell.selectionStyle = .none
+        
         return cell
     }
     
