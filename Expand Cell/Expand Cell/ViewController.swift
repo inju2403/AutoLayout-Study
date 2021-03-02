@@ -21,19 +21,23 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     var dataModels = [ExpandDataModel]()
     
-    let textArray = ["short Text",
-                     "long long long long long long long long long long long long long long long long long long long long Text",
-                     "short Text",
-                     "long long long long long long long long long long long long long long long long long long long long Text"]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        let textArray = ["short Text",
+                         "long long long long long long long long long long long long long long long long long long long long Text",
+                         "short Text",
+                         "long long long long long long long long long long long long long long long long long long long long Text"]
+        
+        for(_, value) in textArray.enumerated() {
+            dataModels.append(ExpandDataModel.init(description: value, isExpand: false))
+        }
     }
 
     // row 개수
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return textArray.count
+        return dataModels.count
     }
     
     // cell을 구성하는 부분에 대한 내용
