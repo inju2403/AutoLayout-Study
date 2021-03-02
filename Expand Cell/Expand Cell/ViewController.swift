@@ -44,7 +44,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "expandCell_ID", for: indexPath) as! ExpandCell
         
-        cell.descriptionLabel.text = "test"
+        cell.descriptionLabel.text = dataModels[indexPath.row].description
+        
+        cell.descriptionLabel.numberOfLines = dataModels[indexPath.row].isExpand == false ? 0 : 1
         
         return cell
     }
