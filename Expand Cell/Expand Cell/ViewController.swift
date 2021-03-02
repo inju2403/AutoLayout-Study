@@ -14,6 +14,18 @@ class ExpandCell: UITableViewCell {
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    struct ExpandDataModel {
+        var description: String
+        var isExpand: Bool
+    }
+    
+    var dataModels = [ExpandDataModel]()
+    
+    let textArray = ["short Text",
+                     "long long long long long long long long long long long long long long long long long long long long Text",
+                     "short Text",
+                     "long long long long long long long long long long long long long long long long long long long long Text"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -21,7 +33,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     // row 개수
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return textArray.count
     }
     
     // cell을 구성하는 부분에 대한 내용
