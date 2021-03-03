@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6EF0000025EFD1630070190B /* add_icon_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EF0FFFF25EFD1630070190B /* add_icon_green.png */; };
+		6EF0000525EFD1720070190B /* food3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EF0000225EFD1720070190B /* food3.png */; };
+		6EF0000625EFD1720070190B /* food1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EF0000325EFD1720070190B /* food1.png */; };
+		6EF0000725EFD1720070190B /* food2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EF0000425EFD1720070190B /* food2.png */; };
+		6EF0000A25EFD1810070190B /* WeatherBG_Moon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EF0000925EFD1810070190B /* WeatherBG_Moon.png */; };
 		6EF0FFEB25EE8AEC0070190B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF0FFEA25EE8AEC0070190B /* AppDelegate.swift */; };
 		6EF0FFED25EE8AEC0070190B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF0FFEC25EE8AEC0070190B /* SceneDelegate.swift */; };
 		6EF0FFEF25EE8AEC0070190B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF0FFEE25EE8AEC0070190B /* ViewController.swift */; };
@@ -16,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6EF0000225EFD1720070190B /* food3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food3.png; sourceTree = "<group>"; };
+		6EF0000325EFD1720070190B /* food1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food1.png; sourceTree = "<group>"; };
+		6EF0000425EFD1720070190B /* food2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food2.png; sourceTree = "<group>"; };
+		6EF0000925EFD1810070190B /* WeatherBG_Moon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WeatherBG_Moon.png; sourceTree = "<group>"; };
 		6EF0FFE725EE8AEC0070190B /* Floating Button.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Floating Button.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EF0FFEA25EE8AEC0070190B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EF0FFEC25EE8AEC0070190B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,7 @@
 		6EF0FFF325EE8AED0070190B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6EF0FFF625EE8AED0070190B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6EF0FFF825EE8AED0070190B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EF0FFFF25EFD1630070190B /* add_icon_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_icon_green.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,11 @@
 				6EF0FFF325EE8AED0070190B /* Assets.xcassets */,
 				6EF0FFF525EE8AED0070190B /* LaunchScreen.storyboard */,
 				6EF0FFF825EE8AED0070190B /* Info.plist */,
+				6EF0FFFF25EFD1630070190B /* add_icon_green.png */,
+				6EF0000325EFD1720070190B /* food1.png */,
+				6EF0000425EFD1720070190B /* food2.png */,
+				6EF0000225EFD1720070190B /* food3.png */,
+				6EF0000925EFD1810070190B /* WeatherBG_Moon.png */,
 			);
 			path = "Floating Button";
 			sourceTree = "<group>";
@@ -126,7 +141,12 @@
 			files = (
 				6EF0FFF725EE8AED0070190B /* LaunchScreen.storyboard in Resources */,
 				6EF0FFF425EE8AED0070190B /* Assets.xcassets in Resources */,
+				6EF0000025EFD1630070190B /* add_icon_green.png in Resources */,
+				6EF0000625EFD1720070190B /* food1.png in Resources */,
 				6EF0FFF225EE8AEC0070190B /* Main.storyboard in Resources */,
+				6EF0000725EFD1720070190B /* food2.png in Resources */,
+				6EF0000A25EFD1810070190B /* WeatherBG_Moon.png in Resources */,
+				6EF0000525EFD1720070190B /* food3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
