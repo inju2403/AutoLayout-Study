@@ -19,14 +19,23 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WeatherBG_Moon.png" translatesAutoresizingMaskIntoConstraints="NO" id="CIh-m5-bRv">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_icon_green.png" translatesAutoresizingMaskIntoConstraints="NO" id="ASC-lH-R6B">
+                                <rect key="frame" x="314" y="762" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="CIE-vc-N6v"/>
+                                    <constraint firstAttribute="width" constant="60" id="ziA-S9-Rrc"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="CIh-m5-bRv" secondAttribute="bottom" id="De2-eH-vnX"/>
                             <constraint firstAttribute="trailing" secondItem="CIh-m5-bRv" secondAttribute="trailing" id="EwQ-GN-uNZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ASC-lH-R6B" secondAttribute="bottom" constant="40" id="RBE-wA-JV2"/>
                             <constraint firstItem="CIh-m5-bRv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Sle-bU-WiZ"/>
                             <constraint firstItem="CIh-m5-bRv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dej-QE-6fz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ASC-lH-R6B" secondAttribute="trailing" constant="40" id="lHW-mZ-21e"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -37,6 +46,7 @@
     </scenes>
     <resources>
         <image name="WeatherBG_Moon.png" width="180" height="320.16000366210938"/>
+        <image name="add_icon_green.png" width="385.60000610351562" height="384.79998779296875"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
