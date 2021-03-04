@@ -51,6 +51,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gR-Eb-FFj">
+                                <rect key="frame" x="319" y="527" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="O3D-u3-2Ij"/>
+                                    <constraint firstAttribute="height" constant="50" id="z6N-vq-SU6"/>
+                                </constraints>
+                                <state key="normal" image="food3.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QaE-Bz-prx">
+                                <rect key="frame" x="319" y="607" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8H5-Et-CV9"/>
+                                    <constraint firstAttribute="width" constant="50" id="Hnc-yP-dOB"/>
+                                </constraints>
+                                <state key="normal" image="food2.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1t3-IA-4JN">
+                                <rect key="frame" x="319" y="687" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Iph-5N-t4N"/>
+                                    <constraint firstAttribute="height" constant="50" id="eCm-zP-YBr"/>
+                                </constraints>
+                                <state key="normal" image="food1.png"/>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcC-nI-neZ">
                                 <rect key="frame" x="314" y="762" width="60" height="60"/>
                                 <constraints>
@@ -65,6 +89,12 @@
                         <constraints>
                             <constraint firstItem="otQ-o9-PM5" firstAttribute="trailing" secondItem="pcC-nI-neZ" secondAttribute="trailing" constant="40" id="1ao-xJ-jjO"/>
                             <constraint firstItem="otQ-o9-PM5" firstAttribute="bottom" secondItem="pcC-nI-neZ" secondAttribute="bottom" constant="40" id="6xn-9v-3A5"/>
+                            <constraint firstItem="pcC-nI-neZ" firstAttribute="centerY" secondItem="QaE-Bz-prx" secondAttribute="centerY" constant="160" id="HjS-1h-3W7"/>
+                            <constraint firstItem="pcC-nI-neZ" firstAttribute="centerX" secondItem="QaE-Bz-prx" secondAttribute="centerX" id="Ofi-f0-Spp"/>
+                            <constraint firstItem="pcC-nI-neZ" firstAttribute="centerY" secondItem="1t3-IA-4JN" secondAttribute="centerY" constant="80" id="VkJ-3U-Nsw"/>
+                            <constraint firstItem="pcC-nI-neZ" firstAttribute="centerY" secondItem="0gR-Eb-FFj" secondAttribute="centerY" constant="240" id="sdp-Jx-eCZ"/>
+                            <constraint firstItem="pcC-nI-neZ" firstAttribute="centerX" secondItem="1t3-IA-4JN" secondAttribute="centerX" id="xDQ-e2-Mr4"/>
+                            <constraint firstItem="pcC-nI-neZ" firstAttribute="centerX" secondItem="0gR-Eb-FFj" secondAttribute="centerX" id="z2z-KN-5uC"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -76,6 +106,9 @@
     <resources>
         <image name="WeatherBG_Moon.png" width="180" height="320.16000366210938"/>
         <image name="add_icon_green.png" width="385.60000610351562" height="384.79998779296875"/>
+        <image name="food1.png" width="256" height="256"/>
+        <image name="food2.png" width="256" height="256"/>
+        <image name="food3.png" width="256" height="256"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
