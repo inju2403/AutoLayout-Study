@@ -19,8 +19,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WeatherBG_Moon.png" translatesAutoresizingMaskIntoConstraints="NO" id="CIh-m5-bRv">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_icon_green.png" translatesAutoresizingMaskIntoConstraints="NO" id="ASC-lH-R6B">
-                                <rect key="frame" x="314" y="762" width="60" height="60"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="add_icon_green.png" translatesAutoresizingMaskIntoConstraints="NO" id="ASC-lH-R6B">
+                                <rect key="frame" x="323" y="762" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="CIE-vc-N6v"/>
                                     <constraint firstAttribute="width" constant="60" id="ziA-S9-Rrc"/>
@@ -43,10 +43,10 @@
             </objects>
             <point key="canvasLocation" x="132" y="116"/>
         </scene>
-        <!--View Controller-->
+        <!--Floating Button List View Controller-->
         <scene sceneID="j4M-uR-bCL">
             <objects>
-                <viewController id="rqW-gy-upk" sceneMemberID="viewController">
+                <viewController id="rqW-gy-upk" customClass="FloatingButtonListViewController" customModule="Floating_Button" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f0D-Su-Mnx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,7 +100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aFx-JP-tl9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="883" y="116"/>
+            <point key="canvasLocation" x="1146" y="116"/>
         </scene>
     </scenes>
     <resources>
