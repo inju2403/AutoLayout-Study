@@ -84,6 +84,14 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="add_icon_green.png"/>
                             </button>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oov-ek-OOl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="grP-qj-GVi">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="otQ-o9-PM5"/>
                         <constraints>
@@ -91,9 +99,13 @@
                             <constraint firstItem="otQ-o9-PM5" firstAttribute="bottom" secondItem="pcC-nI-neZ" secondAttribute="bottom" constant="40" id="6xn-9v-3A5"/>
                             <constraint firstItem="pcC-nI-neZ" firstAttribute="centerY" secondItem="QaE-Bz-prx" secondAttribute="centerY" constant="160" id="HjS-1h-3W7"/>
                             <constraint firstItem="pcC-nI-neZ" firstAttribute="centerX" secondItem="QaE-Bz-prx" secondAttribute="centerX" id="Ofi-f0-Spp"/>
+                            <constraint firstAttribute="bottom" secondItem="Oov-ek-OOl" secondAttribute="bottom" id="TSF-sH-Ucd"/>
+                            <constraint firstItem="Oov-ek-OOl" firstAttribute="leading" secondItem="f0D-Su-Mnx" secondAttribute="leading" id="TVY-p5-T7s"/>
                             <constraint firstItem="pcC-nI-neZ" firstAttribute="centerY" secondItem="1t3-IA-4JN" secondAttribute="centerY" constant="80" id="VkJ-3U-Nsw"/>
+                            <constraint firstAttribute="trailing" secondItem="Oov-ek-OOl" secondAttribute="trailing" id="gfF-1L-WyT"/>
                             <constraint firstItem="pcC-nI-neZ" firstAttribute="centerY" secondItem="0gR-Eb-FFj" secondAttribute="centerY" constant="240" id="sdp-Jx-eCZ"/>
                             <constraint firstItem="pcC-nI-neZ" firstAttribute="centerX" secondItem="1t3-IA-4JN" secondAttribute="centerX" id="xDQ-e2-Mr4"/>
+                            <constraint firstItem="Oov-ek-OOl" firstAttribute="top" secondItem="f0D-Su-Mnx" secondAttribute="top" id="yoM-GJ-jua"/>
                             <constraint firstItem="pcC-nI-neZ" firstAttribute="centerX" secondItem="0gR-Eb-FFj" secondAttribute="centerX" id="z2z-KN-5uC"/>
                         </constraints>
                     </view>
