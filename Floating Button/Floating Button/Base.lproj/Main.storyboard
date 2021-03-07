@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -39,11 +39,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="D8S-Zy-QC6" secondAttribute="bottom" constant="40" id="lyp-jP-5yg"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ZJ7-yA-FsK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042.0289855072465" y="115.84821428571428"/>
+            <point key="canvasLocation" x="132" y="116"/>
         </scene>
         <!--Floating Button List View Controller-->
         <scene sceneID="j4M-uR-bCL">
@@ -53,6 +52,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oov-ek-OOl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="grP-qj-GVi">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gR-Eb-FFj">
                                 <rect key="frame" x="319" y="527" width="50" height="50"/>
                                 <constraints>
@@ -85,14 +92,6 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="add_icon_green.png"/>
                             </button>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oov-ek-OOl">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="grP-qj-GVi">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                </view>
-                                <blurEffect style="regular"/>
-                            </visualEffectView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="otQ-o9-PM5"/>
                         <constraints>
@@ -111,10 +110,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="OLi-lV-X3O"/>
+                    <connections>
+                        <outlet property="btn1CenterY" destination="VkJ-3U-Nsw" id="n4z-vm-hNU"/>
+                        <outlet property="btn2CenterY" destination="HjS-1h-3W7" id="rno-CR-Fmj"/>
+                        <outlet property="btn3CenterY" destination="sdp-Jx-eCZ" id="tkx-mA-oIv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aFx-JP-tl9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1760.8695652173915" y="115.84821428571428"/>
+            <point key="canvasLocation" x="851" y="116"/>
         </scene>
     </scenes>
     <resources>
