@@ -24,13 +24,25 @@ class FloatingButtonListViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        UIView.animate(withDuration: 1) {
+//        UIView.animate(withDuration: 1) {
+//            self.btn1CenterY.constant = 80
+//            self.btn2CenterY.constant = 160
+//            self.btn3CenterY.constant = 240
+//
+//            self.view.layoutIfNeeded() // 화면 갱신
+//        }
+        
+        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0.5, options: .curveEaseOut) { // usingSpringWithDamping: 0 - (매우많이 흔들림) , 1 이상 - (흔들림 없음)
+            //화면 시작
             self.btn1CenterY.constant = 80
             self.btn2CenterY.constant = 160
             self.btn3CenterY.constant = 240
             
             self.view.layoutIfNeeded() // 화면 갱신
+        } completion: { (completion) in
+            //화면이 끝나는 시점
         }
+
     
     }
     
