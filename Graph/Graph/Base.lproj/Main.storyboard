@@ -65,13 +65,31 @@
                                     <constraint firstItem="3qp-IG-WKI" firstAttribute="leading" secondItem="9Jn-dz-tQo" secondAttribute="trailing" constant="20" id="zXr-e8-oJS"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMM-H7-obZ">
+                                <rect key="frame" x="40" y="488" width="40" height="30"/>
+                                <state key="normal" title="style1"/>
+                                <connections>
+                                    <action selector="style1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="20L-63-VYC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hrd-kk-ywc">
+                                <rect key="frame" x="120" y="488" width="42" height="30"/>
+                                <state key="normal" title="style2"/>
+                                <connections>
+                                    <action selector="style2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ilk-In-Ktd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Hrd-kk-ywc" firstAttribute="top" secondItem="XKc-04-irh" secondAttribute="bottom" constant="40" id="Bcu-6G-znu"/>
                             <constraint firstItem="XKc-04-irh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="CqH-dH-fAU"/>
+                            <constraint firstItem="uMM-H7-obZ" firstAttribute="top" secondItem="XKc-04-irh" secondAttribute="bottom" constant="40" id="M3M-xj-wBG"/>
                             <constraint firstItem="XKc-04-irh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gMp-xb-sSr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XKc-04-irh" secondAttribute="trailing" constant="20" id="hQ9-q9-2Q5"/>
+                            <constraint firstItem="Hrd-kk-ywc" firstAttribute="leading" secondItem="uMM-H7-obZ" secondAttribute="trailing" constant="40" id="tPu-6k-vZB"/>
+                            <constraint firstItem="uMM-H7-obZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="yHv-Xk-8Xz"/>
                         </constraints>
                     </view>
                     <connections>
