@@ -46,6 +46,20 @@ class FloatingButtonListViewController: UIViewController {
     
     }
     
-
+    @IBAction func dismissFloating(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.5, options: .curveEaseOut) { // usingSpringWithDamping: 0 - (매우많이 흔들림) , 1 이상 - (흔들림 없음)
+            //화면 시작
+            self.btn1CenterY.constant = 0
+            self.btn2CenterY.constant = 0
+            self.btn3CenterY.constant = 0
+            
+            self.view.layoutIfNeeded() // 화면 갱신
+        } completion: { (completion) in
+            //화면이 끝나는 시점
+            
+            self.dismiss(animated: false, completion: nil)
+        }
+    }
+    
 
 }
