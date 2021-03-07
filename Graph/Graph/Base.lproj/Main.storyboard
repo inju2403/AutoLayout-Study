@@ -74,6 +74,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XKc-04-irh" secondAttribute="trailing" constant="20" id="hQ9-q9-2Q5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="graph1Height" destination="E9Y-yd-Hqm" id="PVJ-ad-LE8"/>
+                        <outlet property="graph2Height" destination="ve8-IQ-l4u" id="PkB-Bq-EYM"/>
+                        <outlet property="graph3Height" destination="GV3-JJ-onj" id="c0q-uk-mcZ"/>
+                        <outlet property="graph4Height" destination="gfK-yq-uTp" id="EyG-R4-Q8G"/>
+                        <outlet property="graph5Height" destination="4fv-T0-Afs" id="uIy-MW-1dB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
