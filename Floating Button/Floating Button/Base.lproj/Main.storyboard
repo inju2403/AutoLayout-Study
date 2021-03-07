@@ -28,7 +28,7 @@
                                 </constraints>
                                 <state key="normal" image="add_icon_green.png"/>
                                 <connections>
-                                    <segue destination="rqW-gy-upk" kind="show" identifier="showPopup" id="Gjp-F6-MxS"/>
+                                    <segue destination="rqW-gy-upk" kind="showDetail" identifier="showPopup" animates="NO" id="Gjp-F6-MxS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -86,7 +86,6 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="otQ-o9-PM5"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="otQ-o9-PM5" firstAttribute="trailing" secondItem="pcC-nI-neZ" secondAttribute="trailing" constant="40" id="1ao-xJ-jjO"/>
                             <constraint firstItem="otQ-o9-PM5" firstAttribute="bottom" secondItem="pcC-nI-neZ" secondAttribute="bottom" constant="40" id="6xn-9v-3A5"/>

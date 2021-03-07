@@ -14,6 +14,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showPopup" {
+            let floatingVC = segue.destination as! FloatingButtonListViewController
+            floatingVC.modalPresentationStyle = .overCurrentContext // 해당 뷰컨트롤러의 색상을 투명하게 사용가능
+        }
+    }
 }
 
