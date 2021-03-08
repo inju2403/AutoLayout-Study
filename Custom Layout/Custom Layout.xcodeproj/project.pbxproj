@@ -13,6 +13,7 @@
 		6E4DB61525F52B8100973F49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E4DB61325F52B8100973F49 /* Main.storyboard */; };
 		6E4DB61725F52B8300973F49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E4DB61625F52B8300973F49 /* Assets.xcassets */; };
 		6E4DB61A25F52B8300973F49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E4DB61825F52B8300973F49 /* LaunchScreen.storyboard */; };
+		6E4DB62325F6731200973F49 /* night_sky.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4DB62225F6731200973F49 /* night_sky.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		6E4DB61625F52B8300973F49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E4DB61925F52B8300973F49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E4DB61B25F52B8300973F49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E4DB62225F6731200973F49 /* night_sky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = night_sky.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				6E4DB61625F52B8300973F49 /* Assets.xcassets */,
 				6E4DB61825F52B8300973F49 /* LaunchScreen.storyboard */,
 				6E4DB61B25F52B8300973F49 /* Info.plist */,
+				6E4DB62225F6731200973F49 /* night_sky.png */,
 			);
 			path = "Custom Layout";
 			sourceTree = "<group>";
@@ -124,6 +127,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E4DB62325F6731200973F49 /* night_sky.png in Resources */,
 				6E4DB61A25F52B8300973F49 /* LaunchScreen.storyboard in Resources */,
 				6E4DB61725F52B8300973F49 /* Assets.xcassets in Resources */,
 				6E4DB61525F52B8100973F49 /* Main.storyboard in Resources */,
