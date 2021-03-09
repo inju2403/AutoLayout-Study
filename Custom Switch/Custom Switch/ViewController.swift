@@ -19,9 +19,29 @@ class ViewController: UIViewController {
         
         swithBtn.layer.cornerRadius = 50 / 2
         switchBG.layer.cornerRadius = 50 / 2
+        
+        
+        // Touch Event 등록 후 함수를 연동한다. (selectedBG)
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.selectedBG(_:)))
+        self.switchBG.addGestureRecognizer(gesture)
+
     }
 
     @IBAction func selectedButton(_ sender: Any) {
+        if buttonCenterX.constant == 75 {
+            buttonCenterX.constant = -75
+            switchBG.backgroundColor = UIColor.lightGray
+        } else {
+            buttonCenterX.constant = 75
+            switchBG.backgroundColor = UIColor.yellow
+        }
+        
+        UIView.animate(withDuration: 0.3) {
+            self.view.layoutIfNeeded() // 레이아웃 업데이트를 바로 적용하는 로직 -> 0.3초 동안 적용
+        }
+    }
+    
+    @objc func selectedBG(_ sender: UIGestureRecognizer) {
         if buttonCenterX.constant == 75 {
             buttonCenterX.constant = -75
             switchBG.backgroundColor = UIColor.lightGray
