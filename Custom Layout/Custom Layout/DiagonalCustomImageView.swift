@@ -36,5 +36,9 @@ class DiagonalCustomImageView: UIImageView {
     func makeMask() {
         self.layer.mask = pathLayer().mask
     }
+    
+    override func layoutSubviews() {
+        makeMask()
+    }
 
 }
