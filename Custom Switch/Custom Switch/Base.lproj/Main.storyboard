@@ -44,6 +44,11 @@
                             <constraint firstItem="u5y-jT-YP9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Zoi-gA-d1Q"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonCenterX" destination="mzH-8C-JYY" id="vhn-ll-dto"/>
+                        <outlet property="switchBG" destination="u5y-jT-YP9" id="v8g-YS-9QA"/>
+                        <outlet property="swithBtn" destination="0tk-3q-chG" id="XgE-CG-adF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
