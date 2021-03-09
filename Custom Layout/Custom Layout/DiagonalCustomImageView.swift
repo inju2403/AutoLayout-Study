@@ -9,12 +9,22 @@ import UIKit
 
 class DiagonalCustomImageView: UIImageView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    // 대각선으로 잘린 사각형을 그린다
+    // bezierPath
+    
+    // path -> layer
+    
+    // layer -> mask
+    
+    func makePath() -> UIBezierPath {
+        let path = UIBezierPath()
+        path.move(to: CGPoint.zero)
+        path.addLine(to: CGPoint.init(x: self.bounds.width, y: 0))
+        path.addLine(to: CGPoint.init(x: self.bounds.width, y: self.bounds.height))
+        path.addLine(to: CGPoint.init(x: self.bounds.width, y: self.bounds.width - 100))
+        path.close() // (0,0)으로 그리는 코드와 같은 역할을 함
+        
+        return path
     }
-    */
 
 }
