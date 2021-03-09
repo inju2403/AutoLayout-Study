@@ -27,7 +27,12 @@ class ViewController: UIViewController {
         } else {
             buttonCenterX.constant = 75
         }
+        
+        UIView.animate(withDuration: 0.3) {
+            self.view.layoutIfNeeded() // 레이아웃 업데이트를 바로 적용하는 로직 -> 0.3초 동안 적용
+        }
     }
+    
     
 }
 
