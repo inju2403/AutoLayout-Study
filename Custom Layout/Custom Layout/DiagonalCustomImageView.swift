@@ -26,5 +26,11 @@ class DiagonalCustomImageView: UIImageView {
         
         return path
     }
+    
+    func pathLayer() -> CAShapeLayer {
+        let shapeLayer = CAShapeLayer()
+        shapeLayer.path = makePath().cgPath
+        return shapeLayer
+    }
 
 }
