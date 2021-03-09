@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="night_sky.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dic-Az-mkP" customClass="DiagonalCustomImageView" customModule="Custom_Layout" customModuleProvider="target">
-                                <rect key="frame" x="72" y="231" width="270" height="300"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="night_sky.png" translatesAutoresizingMaskIntoConstraints="NO" id="EWg-jI-suC" customClass="DiagonalCustomImageView" customModule="Custom_Layout" customModuleProvider="target">
+                                <rect key="frame" x="68" y="297" width="279" height="302"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="innerHeight">
@@ -25,6 +25,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPP-YK-SAl">
+                                <rect key="frame" x="139" y="504" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -36,7 +41,7 @@
         </scene>
     </scenes>
     <designables>
-        <designable name="Dic-Az-mkP">
+        <designable name="EWg-jI-suC">
             <size key="intrinsicContentSize" width="1242" height="2208"/>
         </designable>
     </designables>
