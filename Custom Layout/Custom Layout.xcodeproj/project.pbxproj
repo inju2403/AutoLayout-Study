@@ -14,6 +14,7 @@
 		6E4DB61725F52B8300973F49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E4DB61625F52B8300973F49 /* Assets.xcassets */; };
 		6E4DB61A25F52B8300973F49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E4DB61825F52B8300973F49 /* LaunchScreen.storyboard */; };
 		6E4DB62325F6731200973F49 /* night_sky.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4DB62225F6731200973F49 /* night_sky.png */; };
+		6E4DB62625F6F30700973F49 /* DiagonalCustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4DB62525F6F30700973F49 /* DiagonalCustomImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		6E4DB61925F52B8300973F49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E4DB61B25F52B8300973F49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E4DB62225F6731200973F49 /* night_sky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = night_sky.png; sourceTree = "<group>"; };
+		6E4DB62525F6F30700973F49 /* DiagonalCustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagonalCustomImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				6E4DB60D25F52B8100973F49 /* AppDelegate.swift */,
 				6E4DB60F25F52B8100973F49 /* SceneDelegate.swift */,
 				6E4DB61125F52B8100973F49 /* ViewController.swift */,
+				6E4DB62525F6F30700973F49 /* DiagonalCustomImageView.swift */,
 				6E4DB61325F52B8100973F49 /* Main.storyboard */,
 				6E4DB61625F52B8300973F49 /* Assets.xcassets */,
 				6E4DB61825F52B8300973F49 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E4DB62625F6F30700973F49 /* DiagonalCustomImageView.swift in Sources */,
 				6E4DB61225F52B8100973F49 /* ViewController.swift in Sources */,
 				6E4DB60E25F52B8100973F49 /* AppDelegate.swift in Sources */,
 				6E4DB61025F52B8100973F49 /* SceneDelegate.swift in Sources */,
