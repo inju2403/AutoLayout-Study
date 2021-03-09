@@ -18,6 +18,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func selectedButton(_ sender: Any) {
+        if buttonCenterX.constant == 75 {
+            buttonCenterX.constant = -75
+        } else {
+            buttonCenterX.constant = 75
+        }
+    }
+    
 }
 
