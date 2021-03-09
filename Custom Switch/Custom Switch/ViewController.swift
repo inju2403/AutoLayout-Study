@@ -16,6 +16,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        swithBtn.layer.cornerRadius = 50 / 2
+        switchBG.layer.cornerRadius = 50 / 2
     }
 
     @IBAction func selectedButton(_ sender: Any) {
