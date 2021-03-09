@@ -7,7 +7,7 @@
 
 import UIKit
 
-// 내가 만든 커스텀 코드 -> storyboard 편집화면에서 바로 확인 
+// 내가 만든 커스텀 코드 -> storyboard 편집화면에서 바로 확인
 @IBDesignable
 class DiagonalCustomImageView: UIImageView {
 
@@ -23,7 +23,7 @@ class DiagonalCustomImageView: UIImageView {
         path.move(to: CGPoint.zero)
         path.addLine(to: CGPoint.init(x: self.bounds.width, y: 0))
         path.addLine(to: CGPoint.init(x: self.bounds.width, y: self.bounds.height))
-        path.addLine(to: CGPoint.init(x: self.bounds.width, y: self.bounds.width - 100))
+        path.addLine(to: CGPoint.init(x: 0, y: self.bounds.height - 100))
         path.close() // (0,0)으로 그리는 코드와 같은 역할을 함
         
         return path
@@ -36,7 +36,7 @@ class DiagonalCustomImageView: UIImageView {
     }
     
     func makeMask() {
-        self.layer.mask = pathLayer().mask
+        self.layer.mask = pathLayer()
     }
     
     // 해당하는 오브젝트를 그릴때
