@@ -32,5 +32,9 @@ class DiagonalCustomImageView: UIImageView {
         shapeLayer.path = makePath().cgPath
         return shapeLayer
     }
+    
+    func makeMask() {
+        self.layer.mask = pathLayer().mask
+    }
 
 }
