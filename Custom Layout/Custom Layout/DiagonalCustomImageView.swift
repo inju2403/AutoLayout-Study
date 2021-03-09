@@ -7,6 +7,8 @@
 
 import UIKit
 
+// 내가 만든 커스텀 코드 -> storyboard 편집화면에서 바로 확인 
+@IBDesignable
 class DiagonalCustomImageView: UIImageView {
 
     // 대각선으로 잘린 사각형을 그린다
@@ -37,6 +39,7 @@ class DiagonalCustomImageView: UIImageView {
         self.layer.mask = pathLayer().mask
     }
     
+    // 해당하는 오브젝트를 그릴때
     override func layoutSubviews() {
         makeMask()
     }
