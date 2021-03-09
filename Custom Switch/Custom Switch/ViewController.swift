@@ -24,8 +24,10 @@ class ViewController: UIViewController {
     @IBAction func selectedButton(_ sender: Any) {
         if buttonCenterX.constant == 75 {
             buttonCenterX.constant = -75
+            switchBG.backgroundColor = UIColor.lightGray
         } else {
             buttonCenterX.constant = 75
+            switchBG.backgroundColor = UIColor.yellow
         }
         
         UIView.animate(withDuration: 0.3) {

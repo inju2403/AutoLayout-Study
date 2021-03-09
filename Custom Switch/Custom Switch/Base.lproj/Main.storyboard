@@ -20,7 +20,7 @@
                                 <rect key="frame" x="107" y="423" width="200" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tk-3q-chG">
-                                        <rect key="frame" x="150" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <color key="backgroundColor" red="0.16862745100000001" green="0.52941176469999995" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="cpb-ev-wRn"/>
@@ -31,11 +31,11 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="QM7-4i-XYE"/>
                                     <constraint firstAttribute="width" constant="200" id="Zuo-ob-fKk"/>
-                                    <constraint firstItem="0tk-3q-chG" firstAttribute="centerX" secondItem="u5y-jT-YP9" secondAttribute="centerX" constant="75" id="mzH-8C-JYY"/>
+                                    <constraint firstItem="0tk-3q-chG" firstAttribute="centerX" secondItem="u5y-jT-YP9" secondAttribute="centerX" constant="-75" id="mzH-8C-JYY"/>
                                     <constraint firstItem="0tk-3q-chG" firstAttribute="centerY" secondItem="u5y-jT-YP9" secondAttribute="centerY" id="qR5-dQ-3hI"/>
                                 </constraints>
                             </view>
@@ -62,8 +62,8 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
