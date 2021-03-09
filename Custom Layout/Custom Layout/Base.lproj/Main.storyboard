@@ -15,6 +15,12 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="night_sky.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dic-Az-mkP" customClass="DiagonalCustomImageView" customModule="Custom_Layout" customModuleProvider="target">
+                                <rect key="frame" x="72" y="231" width="270" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -24,7 +30,13 @@
             <point key="canvasLocation" x="-197.10144927536234" y="115.84821428571428"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="Dic-Az-mkP">
+            <size key="intrinsicContentSize" width="1242" height="2208"/>
+        </designable>
+    </designables>
     <resources>
+        <image name="night_sky.png" width="1242" height="2208"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
