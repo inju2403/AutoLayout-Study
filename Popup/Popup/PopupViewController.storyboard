@@ -11,7 +11,7 @@
         <!--Popup View Controller-->
         <scene sceneID="HfX-GE-kPU">
             <objects>
-                <viewController storyboardIdentifier="popupVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zLE-Bd-LP5" customClass="PopupViewController" customModule="Popup" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="popupVC" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zLE-Bd-LP5" customClass="PopupViewController" customModule="Popup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NhH-1r-D2l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,7 +81,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MdB-sl-mNT"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="S9M-HS-HWh" firstAttribute="centerX" secondItem="NhH-1r-D2l" secondAttribute="centerX" id="aNE-gq-SGy"/>
                             <constraint firstItem="S9M-HS-HWh" firstAttribute="centerY" secondItem="NhH-1r-D2l" secondAttribute="centerY" multiplier="90%" id="qUq-Mo-n34"/>
@@ -96,9 +96,6 @@
     <resources>
         <image name="balloon_3.png" width="282.72000122070312" height="418.55999755859375"/>
         <image name="bg5.png" width="585" height="366"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
