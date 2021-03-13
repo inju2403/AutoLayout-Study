@@ -21,7 +21,10 @@ class ViewController: UIViewController {
         
         let popupVC = storyboard.instantiateViewController(withIdentifier: "popupVC")
         
-        self.present(popupVC, animated: true, completion: nil)
+        // 해당 뷰컨트롤러에 투명도가 있으면 투명도를 적용
+        popupVC.modalPresentationStyle = .overCurrentContext
+        
+        self.present(popupVC, animated: false, completion: nil)
     }
     
 }
