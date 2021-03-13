@@ -45,9 +45,12 @@
                                         <rect key="frame" x="121.5" y="245" width="98.5" height="30"/>
                                         <state key="normal" title="Button"/>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="balloon_3.png" translatesAutoresizingMaskIntoConstraints="NO" id="wOc-L8-L5E">
-                                        <rect key="frame" x="77" y="8" width="87" height="74"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="balloon_3.png" translatesAutoresizingMaskIntoConstraints="NO" id="wOc-L8-L5E">
+                                        <rect key="frame" x="85" y="-50" width="70" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="dPn-rb-VZi"/>
+                                            <constraint firstAttribute="height" constant="100" id="ySc-5X-RNW"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
@@ -66,6 +69,8 @@
                                     <constraint firstAttribute="bottom" secondItem="pYW-UZ-VKP" secondAttribute="bottom" constant="20" id="Sus-Ax-YtH"/>
                                     <constraint firstItem="bjQ-qj-erB" firstAttribute="leading" secondItem="S9M-HS-HWh" secondAttribute="leading" constant="20" id="Zci-3U-lYe"/>
                                     <constraint firstAttribute="trailing" secondItem="zi7-xK-a5Z" secondAttribute="trailing" constant="20" id="aST-L3-Exm"/>
+                                    <constraint firstItem="wOc-L8-L5E" firstAttribute="centerY" secondItem="S9M-HS-HWh" secondAttribute="top" id="aXO-8C-6Ab"/>
+                                    <constraint firstItem="wOc-L8-L5E" firstAttribute="centerX" secondItem="S9M-HS-HWh" secondAttribute="centerX" id="bmk-uH-Ect"/>
                                     <constraint firstItem="y2b-YD-9Ix" firstAttribute="centerY" secondItem="pYW-UZ-VKP" secondAttribute="centerY" id="c2C-Ik-OrG"/>
                                     <constraint firstAttribute="trailing" secondItem="bjQ-qj-erB" secondAttribute="trailing" constant="20" id="cIy-EQ-PuR"/>
                                     <constraint firstItem="pYW-UZ-VKP" firstAttribute="leading" secondItem="S9M-HS-HWh" secondAttribute="leading" constant="20" id="hn6-ha-AVD"/>
