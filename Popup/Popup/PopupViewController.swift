@@ -19,4 +19,8 @@ class PopupViewController: UIViewController {
         self.dismiss(animated: false, completion: nil)
     }
     
+    
+    @IBAction func doneAction(_ sender: UIButton) {
+        print("press done action")
+    }
 }

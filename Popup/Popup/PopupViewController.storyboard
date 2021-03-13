@@ -82,11 +82,24 @@
                                     <constraint firstItem="oUZ-EI-5NO" firstAttribute="top" secondItem="S9M-HS-HWh" secondAttribute="top" id="sCt-0o-Exi"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rt4-ti-lNZ">
+                                <rect key="frame" x="302" y="230.5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="XjI-jp-4Bh"/>
+                                    <constraint firstAttribute="height" constant="50" id="iiX-ub-RLq"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="done_check_icon.png"/>
+                                <connections>
+                                    <action selector="doneAction:" destination="zLE-Bd-LP5" eventType="touchUpInside" id="5B0-SI-WBd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MdB-sl-mNT"/>
                         <color key="backgroundColor" red="0.49851488544993161" green="0.49851488544993161" blue="0.49851488544993161" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="S9M-HS-HWh" firstAttribute="centerX" secondItem="NhH-1r-D2l" secondAttribute="centerX" id="aNE-gq-SGy"/>
+                            <constraint firstItem="S9M-HS-HWh" firstAttribute="top" secondItem="Rt4-ti-lNZ" secondAttribute="centerY" id="d9q-hD-qkf"/>
+                            <constraint firstItem="S9M-HS-HWh" firstAttribute="trailing" secondItem="Rt4-ti-lNZ" secondAttribute="centerX" id="pc5-Ex-fNt"/>
                             <constraint firstItem="S9M-HS-HWh" firstAttribute="centerY" secondItem="NhH-1r-D2l" secondAttribute="centerY" multiplier="90%" id="qUq-Mo-n34"/>
                         </constraints>
                     </view>
@@ -99,6 +112,7 @@
     <resources>
         <image name="balloon_3.png" width="282.72000122070312" height="418.55999755859375"/>
         <image name="bg5.png" width="585" height="366"/>
+        <image name="done_check_icon.png" width="512" height="512"/>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
