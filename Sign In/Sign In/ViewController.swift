@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         
     }
     
-    func isValidEmail(email:String?) -> Bool {
+    func isValidEmail(email: String?) -> Bool {
         
         guard email != nil else { return false }
         
@@ -44,6 +44,15 @@ class ViewController: UIViewController {
         return pred.evaluate(with: email)
     }
 
+    func isVaildPassword(pw: String?) -> Bool {
+        
+        if let hasPassword = pw {
+            if hasPassword.count < 8 {
+                return false
+            }
+        }
+        return true;
+    }
 
 }
 
