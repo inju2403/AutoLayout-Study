@@ -28,6 +28,9 @@ class ViewController: UIViewController {
         
         emailErrorHeight = emailError.heightAnchor.constraint(equalToConstant: 0)
         passwordErrorHeight = passwordError.heightAnchor.constraint(equalToConstant: 0)
+        
+        emailErrorHeight.isActive = true
+        passwordErrorHeight.isActive = true
     }
     
     @objc func textFieldEdited(textField: UITextField) {
@@ -37,7 +40,12 @@ class ViewController: UIViewController {
             if isValidEmail(email: textField.text) == true {
                 emailErrorHeight.isActive = true
             } else {
-                emailErrorHeight.isActive = false
+                if textField.text!.count == 0 {
+                    emailErrorHeight.isActive = true
+                }
+                else {
+                    emailErrorHeight.isActive = false
+                }
             }
             
         } else if textField == passwordTextField {
@@ -45,7 +53,12 @@ class ViewController: UIViewController {
             if isVaildPassword(pw: textField.text) == true {
                 passwordErrorHeight.isActive = true
             } else {
-                passwordErrorHeight.isActive = false
+                if textField.text!.count == 0 {
+                    passwordErrorHeight.isActive = true
+                }
+                else {
+                    passwordErrorHeight.isActive = false
+                }
             }
         }
         
