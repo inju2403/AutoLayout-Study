@@ -97,7 +97,7 @@
                     <connections>
                         <outlet property="emailError" destination="IXX-eD-6eO" id="tfu-5y-QVM"/>
                         <outlet property="emailTextField" destination="rFi-6Z-FZZ" id="Zpk-El-gvb"/>
-                        <outlet property="passwordError" destination="xMd-LI-jS5" id="xiT-Sr-iDK"/>
+                        <outlet property="passwordError" destination="gsK-bH-Enu" id="7CF-bn-5n5"/>
                         <outlet property="passwordTextField" destination="xMd-LI-jS5" id="ged-iX-n6F"/>
                     </connections>
                 </viewController>

@@ -13,7 +13,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBOutlet weak var emailError: UILabel!
-    @IBOutlet weak var passwordError: UITextField!
+    @IBOutlet weak var passwordError: UILabel!
+    
+    var emailErrorHeight: NSLayoutConstraint!
+    var passwordErrorHeight: NSLayoutConstraint!
     
     
     override func viewDidLoad() {
@@ -22,14 +25,28 @@ class ViewController: UIViewController {
         //textfield 값이 변경되는 걸 캐치하도록 세팅
         emailTextField.addTarget(self, action: #selector(textFieldEdited), for: .editingChanged)
         passwordTextField.addTarget(self, action: #selector(textFieldEdited), for: .editingChanged)
+        
+        emailErrorHeight = emailError.heightAnchor.constraint(equalToConstant: 0)
+        passwordErrorHeight = passwordError.heightAnchor.constraint(equalToConstant: 0)
     }
     
     @objc func textFieldEdited(textField: UITextField) {
         
         if textField == emailTextField {
             
+            if isValidEmail(email: textField.text) == true {
+                emailErrorHeight.isActive = true
+            } else {
+                emailErrorHeight.isActive = false
+            }
+            
         } else if textField == passwordTextField {
             
+            if isVaildPassword(pw: textField.text) == true {
+                passwordErrorHeight.isActive = true
+            } else {
+                passwordErrorHeight.isActive = false
+            }
         }
         
     }
@@ -51,7 +68,7 @@ class ViewController: UIViewController {
                 return false
             }
         }
-        return true;
+        return true
     }
 
 }
