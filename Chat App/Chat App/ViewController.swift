@@ -7,9 +7,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet weak var chatTableView: UITableView!
+    @IBOutlet weak var chatTableView: UITableView! {
+        didSet {
+            chatTableView.delegate = self
+            chatTableView.dataSource = self
+        }
+    }
+    
+    
     @IBOutlet weak var inputTextView: UITextView!
     @IBOutlet weak var inputViewBottomMargin: NSLayoutConstraint!
     
@@ -72,5 +79,12 @@ class ViewController: UIViewController {
     @IBAction func sendString(_ sender: UIButton) {
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
 }
 
