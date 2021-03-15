@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextViewDelegate {
 
     @IBOutlet weak var chatTableView: UITableView! {
         didSet {
@@ -17,8 +17,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
-    @IBOutlet weak var inputTextView: UITextView!
+    @IBOutlet weak var inputTextView: UITextView! {
+        didSet {
+            inputTextView.delegate = self
+        }
+    }
+    
+    
     @IBOutlet weak var inputViewBottomMargin: NSLayoutConstraint!
+    @IBOutlet weak var inputTextViewHeight: NSLayoutConstraint!
     
     var chatDatas = [String]()
     
@@ -102,6 +109,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // inputTextView -> chatDatas
         chatDatas.append(inputTextView.text)
         inputTextView.text = ""
+        inputTextViewHeight.constant = 40
         
 //        chatTableView.reloadData() -> 통통 튀는 느낌이 나서 잘 사용하지 않음
         
@@ -112,6 +120,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         // 채팅을 입력했을 때 가장 마지막 row로 이동하여서 채팅이 잘려서 보이지 않도록 설정
         chatTableView.scrollToRow(at: lastIndexPath, at: UITableView.ScrollPosition.bottom, animated: true)
+    }
+    
+    func textViewDidChange(_ textView: UITextView) {
+        
+        if textView.contentSize.height <= 40 {
+            inputTextViewHeight.constant = 40
+        } else if textView.contentSize.height >= 100 {
+            inputTextViewHeight.constant = 100
+        } else {
+            inputTextViewHeight.constant = textView.contentSize.height
+        }
     }
 }
 
