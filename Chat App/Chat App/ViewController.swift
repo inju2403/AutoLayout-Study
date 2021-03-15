@@ -86,11 +86,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if indexPath.row % 2 == 0 {
             let myCell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! MyCell
             myCell.myTextView.text = chatDatas[indexPath.row]
+            myCell.selectionStyle = .none
             
             return myCell
         } else {
             let yourCell = tableView.dequeueReusableCell(withIdentifier: "yourCell", for: indexPath) as! YourCell
             yourCell.yourTextView.text = chatDatas[indexPath.row]
+            yourCell.selectionStyle = .none
             
             return yourCell
         }
