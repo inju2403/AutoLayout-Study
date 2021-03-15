@@ -39,15 +39,34 @@ class ViewController: UIViewController {
         // CGRect: Frame 형태의 Type
         let keyboardFrame = notiInfo[UIResponder.keyboardFrameEndUserInfoKey] as! CGRect
         
-        // 키보드가 올라갈 때 높이 값을 키보드의 높이 만큼 줌
         let height = keyboardFrame.size.height
-        inputViewBottomMargin.constant = height
+        
+        // 키보드가 올라갈 때 걸리는 시간을 가져온다. (그 시간만큼 텍스트뷰에 애니메이션을 주기 위해서)
+        let animationDuration = notiInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as! TimeInterval
+        
+        
+        UIView.animate(withDuration: animationDuration) {
+            // 키보드가 올라갈 때 높이 값을 키보드의 높이 만큼 줌
+            self.inputViewBottomMargin.constant = height
+            self.view.layoutIfNeeded()
+        }
+        
         
     }
     
     @objc func keyboardWillHide(noti: Notification) {
-        // 키보드가 내려갈 때 높이 값을 0으로 설정
-        inputViewBottomMargin.constant = 0
+        
+        let notiInfo = noti.userInfo!
+        
+        // 키보드가 내려갈 때 걸리는 시간을 가져온다. (그 시간만큼 텍스트뷰에 애니메이션을 주기 위해서)
+        let animationDuration = notiInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as! TimeInterval
+        
+        
+        UIView.animate(withDuration: animationDuration) {
+            // 키보드가 내려갈 때 높이 값을 0으로 설정
+            self.inputViewBottomMargin.constant = 0
+            self.view.layoutIfNeeded()
+        }
     }
 
     @IBAction func sendString(_ sender: UIButton) {
