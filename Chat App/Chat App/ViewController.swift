@@ -13,6 +13,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         didSet {
             chatTableView.delegate = self
             chatTableView.dataSource = self
+            chatTableView.separatorStyle = .none // 테이블뷰 내부에서 구분선을 사용하지 않음
         }
     }
     
