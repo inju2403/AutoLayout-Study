@@ -96,6 +96,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     @IBAction func sendString(_ sender: UIButton) {
+        // inputTextView -> chatDatas
+        chatDatas.append(inputTextView.text)
+        inputTextView.text = ""
+        
+        chatTableView.reloadData()
     }
 }
 
