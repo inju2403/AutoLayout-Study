@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         // CGRect: Frame 형태의 Type
         let keyboardFrame = notiInfo[UIResponder.keyboardFrameEndUserInfoKey] as! CGRect
         
-        let height = keyboardFrame.size.height
+        let height = keyboardFrame.size.height - self.view.safeAreaInsets.bottom // 아이폰 X 이상에서 텍스트뷰의 크기를 맞추기 위해 safeArea 영역만큼 빼야한다
         
         // 키보드가 올라갈 때 걸리는 시간을 가져온다. (그 시간만큼 텍스트뷰에 애니메이션을 주기 위해서)
         let animationDuration = notiInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as! TimeInterval
