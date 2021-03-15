@@ -10,25 +10,25 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="283" id="KGk-i7-Jjw" customClass="YourCell" customModule="yourCell">
-            <rect key="frame" x="0.0" y="0.0" width="507" height="283"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="yourCell" rowHeight="387" id="KGk-i7-Jjw" customClass="YourCell" customModule="Chat_App">
+            <rect key="frame" x="0.0" y="0.0" width="607" height="387"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="507" height="283"/>
+                <rect key="frame" x="0.0" y="0.0" width="607" height="387"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yourBubble.png" translatesAutoresizingMaskIntoConstraints="NO" id="sh0-2E-f2f">
-                        <rect key="frame" x="10" y="10" width="195.5" height="263"/>
+                        <rect key="frame" x="10" y="10" width="195.5" height="367"/>
                         <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
                     </imageView>
                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="aaaaa aaaaaaaaaaaaaaa" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cxN-jF-kxk">
-                        <rect key="frame" x="30" y="15" width="165.5" height="253"/>
+                        <rect key="frame" x="30" y="15" width="165.5" height="357"/>
                         <color key="textColor" systemColor="labelColor"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2021.3.15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXh-Dm-Eng">
-                        <rect key="frame" x="210.5" y="261" width="46" height="12"/>
+                        <rect key="frame" x="210.5" y="360" width="46" height="12"/>
                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -38,7 +38,7 @@
                     <constraint firstItem="sh0-2E-f2f" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="2zp-Ck-YGy"/>
                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bXh-Dm-Eng" secondAttribute="trailing" constant="40" id="8Tw-Y4-eUb"/>
                     <constraint firstItem="cxN-jF-kxk" firstAttribute="top" secondItem="sh0-2E-f2f" secondAttribute="top" constant="5" id="CLb-Dh-gQh"/>
-                    <constraint firstItem="bXh-Dm-Eng" firstAttribute="bottom" secondItem="sh0-2E-f2f" secondAttribute="bottom" id="QCN-im-f2b"/>
+                    <constraint firstItem="bXh-Dm-Eng" firstAttribute="bottom" secondItem="cxN-jF-kxk" secondAttribute="bottom" id="HfG-WL-WN5"/>
                     <constraint firstItem="cxN-jF-kxk" firstAttribute="bottom" secondItem="sh0-2E-f2f" secondAttribute="bottom" constant="-5" id="TJs-kO-oOI"/>
                     <constraint firstItem="cxN-jF-kxk" firstAttribute="trailing" secondItem="sh0-2E-f2f" secondAttribute="trailing" constant="-10" id="b2a-Jg-UK4"/>
                     <constraint firstAttribute="bottom" secondItem="sh0-2E-f2f" secondAttribute="bottom" constant="10" id="dEo-aj-k91"/>
@@ -49,9 +49,9 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="yourTextView" destination="cxN-jF-kxk" id="BHn-JQ-3td"/>
+                <outlet property="yourTextView" destination="cxN-jF-kxk" id="H0f-op-nvY"/>
             </connections>
-            <point key="canvasLocation" x="267.39130434782612" y="210.60267857142856"/>
+            <point key="canvasLocation" x="194.92753623188406" y="245.42410714285714"/>
         </tableViewCell>
     </objects>
     <resources>

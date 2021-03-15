@@ -101,7 +101,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         chatDatas.append(inputTextView.text)
         inputTextView.text = ""
         
-        chatTableView.reloadData()
+//        chatTableView.reloadData() -> 통통 튀는 느낌이 나서 잘 사용하지 않음
+        
+        
+        let lastIndexPath = IndexPath(row: chatDatas.count - 1, section: 0)
+        
+        chatTableView.insertRows(at: [lastIndexPath], with: UITableView.RowAnimation.automatic)
+        
+        // 채팅을 입력했을 때 가장 마지막 row로 이동하여서 채팅이 잘려서 보이지 않도록 설정
+        chatTableView.scrollToRow(at: lastIndexPath, at: UITableView.ScrollPosition.bottom, animated: true)
     }
 }
 
