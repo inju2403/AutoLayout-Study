@@ -16,9 +16,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
-    
     @IBOutlet weak var inputTextView: UITextView!
     @IBOutlet weak var inputViewBottomMargin: NSLayoutConstraint!
+    
+    var chatDatas = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,16 +76,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             self.view.layoutIfNeeded()
         }
     }
-
-    @IBAction func sendString(_ sender: UIButton) {
-    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return chatDatas.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        if indexPath.row % 2 == 0 {
+            let myCell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! MyCell
+            myCell.myTextView.text = chatDatas[indexPath.row]
+            
+            return myCell
+        } else {
+            let yourCell = tableView.dequeueReusableCell(withIdentifier: "yourCell", for: indexPath) as! YourCell
+            yourCell.yourTextView.text = chatDatas[indexPath.row]
+            
+            return yourCell
+        }
+    }
+    
+    @IBAction func sendString(_ sender: UIButton) {
     }
 }
 
